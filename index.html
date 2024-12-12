@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo.png" alt="GIS Logo">
+            </div>
+            <h1 class="company-name">GIS Company</h1>
+        </div>
+
+        <!-- Desktop Navigation Buttons -->
+        <nav class="desktop-nav">
+            <a href="../Login page/index.html" class="nav-btn">Login</a>
+            <a href="services.html" class="nav-btn">Services</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="../Login page/index.html" class="nav-btn">Login</a>
+            <a href="services.html" class="nav-btn">Services</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+            </div>
+        </section>
+
+        <section>
+            <h2>What is GIS?</h2>
+            <p>
+                GIS integrates data, technology, and geography to create a dynamic platform for understanding our world.
+                It allows users to:
+            </p>
+            <ul>
+                <li><strong>Visualize Data:</strong> Create interactive maps and 3D models.</li>
+                <li><strong>Analyze Patterns:</strong> Identify trends and relationships in spatial data.</li>
+                <li><strong>Make Informed Decisions:</strong> Support urban planning, environmental conservation,
+                    disaster management, and more.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Why Choose GIS?</h2>
+            <p>
+                From smart cities to sustainable development, GIS empowers industries such as:
+            </p>
+            <ul>
+                <li><strong>Environment:</strong> Monitor ecosystems, track climate change, and conserve biodiversity.
+                </li>
+                <li><strong>Urban Planning:</strong> Optimize infrastructure development and manage resources
+                    efficiently.</li>
+                <li><strong>Agriculture:</strong> Enhance crop management and predict yields.</li>
+                <li><strong>Healthcare:</strong> Track disease outbreaks and allocate resources effectively.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>About VITGIS</h2>
+            <p>
+                Our platform connects a vibrant community of students, researchers, and professionals passionate about
+                GIS technology. Whether you’re a beginner or an expert, VITGIS is your gateway to explore, innovate, and
+                make a difference through geospatial technology.
+            </p>
+        </section>
+        <section>
+            <h2>Join Us</h2>
+            <p>Be a part of VITGIS and explore opportunities to:</p>
+            <li>Learn: Gain access to resources, tutorials, and workshops.</li>
+            <li>Collaborate: Work on innovative projects and contribute to groundbreaking research.</li>
+            <li>Grow: Network with like-minded individuals and build your career in GIS.</li>
+            <p>
+                Explore the world, one map at a time. Welcome to the future of geospatial intelligence.
+            </p>
+            <p>
+                <a href="../Login page/index.html">!! Click here to Get Started Today !!</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 GIS Company. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script>
+    function toggleMenu() {
+        const mobileNav = document.getElementById('mobileNav');
+        const currentLeft = mobileNav.style.left;
+
+        if (currentLeft === '-250px' || currentLeft === '') {
+            mobileNav.style.left = '0';
+        } else {
+            mobileNav.style.left = '-250px';
+        }
+    }
+</script>
+
+</html>
